@@ -29,9 +29,10 @@ const Index = () => {
       </div>
       <div className="container mt-2 mx-auto" style={{ display: "flex", alignItems: 'center', justifyContent: 'center' }}>
         <div className="card-columns">
-          {
+          { items &&
             items.products.map((item, index) => (
               <CardItems
+              key={index}
                 image={item.image.imageUrl}
                 title={item.title}
                 price={item.price.value}

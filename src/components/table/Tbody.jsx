@@ -18,7 +18,7 @@ export default function Tbody({ values }) {
     <tbody>
       { dataItem && dataItem.map((item, index) => {
         return (
-          <tr>
+          <tr key={index}>
             <th scope="row">{index}</th>
             <td>{item.name}</td>
             <td>{item.value}</td>

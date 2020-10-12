@@ -65,11 +65,11 @@ const DetailsItem = (props) => {
         </div>
         <div className="col mt-2">
           <p className="h5 text-center">{item.title}</p>
-          <p class="lead">Condition: {item.condition}</p>
-          <p class="lead">Brand: {item.brand}</p>
-          <p class="lead">Color: {item.color}</p>
-          <p class="lead">Model: {item.mpn === undefined ? "N/A" : item.mpn}</p>
-          <p class="lead">
+          <p className="lead">Condition: {item.condition}</p>
+          <p className="lead">Brand: {item.brand}</p>
+          <p className="lead">Color: {item.color}</p>
+          <p className="lead">Model: {item.mpn === undefined ? "N/A" : item.mpn}</p>
+          <p className="lead">
             Price : {price.value} {price.currency}
           </p>
         </div>
